@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+
+<body>
+    <p> <a id="t1" href="/Paypal/"> </a> </p>
+
+    <script>
+    window.paypalCheckoutReady = function() {
+        paypal.checkout.setup("AN7M252JMBSF6", {
+        locale: 'en_US',
+        environment: 'sandbox',
+        container: ['t1', 't2']
+      });
+    }
+    </script>
+    <script async src="//www.paypalobjects.com/api/checkout.js"></script>
+</body>
+</html>
