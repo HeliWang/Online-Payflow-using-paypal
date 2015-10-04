@@ -13,6 +13,7 @@ namespace WebApplication2.Controllers
         {
             //var newModel = new Models.PaypalResult { id = myid, name = "dd" };
             return View();
+
         } 
     }
 }
